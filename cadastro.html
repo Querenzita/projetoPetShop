@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Pet Shop Feliz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4fb8d2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #0f9ca9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45bde9;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #6ec0e3;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Cliente - Pet Shop Feliz</h1>
+    </header>
+
+    <div class="container">
+        <h2>Preencha os dados abaixo para cadastrar seu pet!</h2>
+        <form action="#" method="POST">
+            <!-- Dados do cliente -->
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+            </div>
+            <div class="form-group">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+            </div>
+
+            <!-- Dados do pet -->
+            <h3>Dados do Pet</h3>
+            <div class="form-group">
+                <label for="nome_pet">Nome do Pet:</label>
+                <input type="text" id="nome_pet" name="nome_pet" required placeholder="Nome do seu pet">
+            </div>
+            <div class="form-group">
+                <label for="tipo_pet">Tipo de Pet:</label>
+                <select id="tipo_pet" name="tipo_pet" required>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="passaro">Pássaro</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="raca_pet">Raça do Pet:</label>
+                <input type="text" id="raca_pet" name="raca_pet" required placeholder="Raça do seu pet">
+            </div>
+            <div class="form-group">
+                <label for="idade_pet">Idade do Pet:</label>
+                <input type="text" id="idade_pet" name="idade_pet" required placeholder="Idade do seu pet">
+            </div>
+
+            <div class="form-group">
+                <label for="observacoes">Observações (opcional):</label>
+                <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma observação importante sobre seu pet?"></textarea>
+            </div>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Pet Shop Feliz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
